@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;900&display=swap');
+
+/*================== theme color ==================*/
+:root {
+    /*color*/
+    --primary-color: #198754;
+    --secondary-color: #0d914610;
+    --primary-color-title: #1d4943;
+    --secondary-color-title: #333333;
+    --text-color-title: #212529;
+    --basic-text-color: #606268;
+    --nav-text-color: #212121;
+
+    /*size*/
+    --banner-title-size: 24px;
+    --section-title2-size: 30px;
+    --text-tittle-size: 20px;
+    --text-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* ====== tablet device ====== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ======small device ======*/
+@media screen and (max-width: 576px) {
+}
