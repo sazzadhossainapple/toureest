@@ -431,9 +431,10 @@ a {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6rem;
+    gap: 10rem;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    justify-items: center;
 }
 .footer-title {
     color: #ffffff;
@@ -455,6 +456,9 @@ a {
 .footer-icon {
     color: #ffffff;
     font-size: 20px;
+}
+.footer-icon:hover {
+    color: var(--secondary-color);
 }
 .footer-img {
     max-width: 120px;
