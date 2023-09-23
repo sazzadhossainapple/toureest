@@ -277,7 +277,6 @@ a {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-top: 4rem;
-    padding-bottom: 4rem;
 }
 
 .grid-card {
@@ -300,7 +299,176 @@ a {
     border-top-right-radius: 10px;
 }
 
+.card-content {
+    padding: 12px 6px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #2b2b2b;
+}
+.card-text {
+    color: #1c3c6b;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.card-btn {
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 32px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.learn-more {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+.circle {
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    right: -22px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 16px;
+}
+.circle span {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    transform: rotate(45deg);
+}
+
+.package-grid {
+    margin-top: 4rem;
+}
+
+.packages-card {
+    height: 160px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.image-card {
+    height: 160px;
+    object-fit: cover;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    display: inline-block; /* Make the container inline so it wraps the image */
+    position: relative;
+}
+
+/* Apply a gradient background on the right side of the container */
+.image-card::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+    z-index: 1;
+}
+.image-card img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 2;
+    object-fit: cover;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.details-btn {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 32px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.star-icon {
+    color: var(--secondary-color) !important;
+}
+
+.recent-container {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.recent-warpper {
+    background-color: #ffffff;
+}
+.recent-gird {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
 /* home page css end */
+
+/* footer start */
+
+.footer {
+    background-color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.footer-title {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.footer-link-item {
+    margin-bottom: 0.7rem;
+}
+.footer-link-text {
+    font-size: 14px;
+    color: #f3eeee;
+    font-weight: 400;
+}
+.footer-link-text:hover {
+    text-decoration: underline;
+}
+.footer-icon {
+    color: #ffffff;
+    font-size: 20px;
+}
+.footer-img {
+    max-width: 120px;
+    object-fit: cover;
+}
+.footer-img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.footer-copy {
+    font-size: 12px;
+    color: #dad9d9;
+}
+/* footer end */
 
 /* ====== tablet device ====== */
 @media screen and (max-width: 1024px) {
