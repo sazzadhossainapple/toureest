@@ -62,24 +62,30 @@
                                     >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link-text" href="#"
+                                    <a
+                                        class="nav-link nav-link-text"
+                                        href="all-package.html"
                                         >All Packages</a
                                     >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link-text" href="#"
+                                    <a
+                                        class="nav-link nav-link-text"
+                                        href="blog.html"
                                         >Blog</a
                                     >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link-text" href="#"
+                                    <a
+                                        class="nav-link nav-link-text"
+                                        href="contact.html"
                                         >Contact</a
                                     >
                                 </li>
                                 <li class="nav-item">
                                     <a
                                         class="nav-link btn-header rounded border-0"
-                                        href="#"
+                                        href="login.html"
                                     >
                                         Sign In
                                     </a>
@@ -95,12 +101,103 @@
         <main class="bg-body-color">
             <!-- banner section start  -->
 
-            <section class="home-banner">
+            <section class="home-banner position-relative">
                 <div class="home-banner-bg">
                     <img
                         alt="banner image"
                         src="./assets/image/Banner/home_banner.png"
                     />
+                </div>
+
+                <!-- search start -->
+
+                <div class="container search-container">
+                    <div class="search-content position-relative">
+                        <ul
+                            class="nav nav-tabs header-search d-flex align-items-center justify-content-center"
+                            id="myTabs"
+                        >
+                            <li class="nav-item tab-links">
+                                <a
+                                    class="active d-flex align-items-center justify-content-center gap-2 location"
+                                    data-bs-toggle="tab"
+                                    href="#local"
+                                >
+                                    <img
+                                        src="./assets/image/icon/location_local.png"
+                                        alt=""
+                                    />
+                                    Local</a
+                                >
+                                <p
+                                    class="boder-line"
+                                    style="display: block"
+                                ></p>
+                            </li>
+                            <li class="tab-line">
+                                <span class="line-hr"></span>
+                            </li>
+                            <li class="nav-item tab-links">
+                                <a
+                                    class="d-flex align-items-center justify-content-center gap-2 location"
+                                    data-bs-toggle="tab"
+                                    href="#international"
+                                >
+                                    <img
+                                        src="./assets/image/icon/international_location.png"
+                                        alt=""
+                                    />
+                                    International
+                                </a>
+                                <p class="boder-line" style="display: none"></p>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="local">
+                                <ul class="nav nav-tabs" id="myTabs">
+                                    <li class="nav-item tab-links">
+                                        <a
+                                            class="active"
+                                            data-bs-toggle="tab"
+                                            href="#one-way"
+                                        >
+                                            Local</a
+                                        >
+                                    </li>
+                                    <li class="tab-line">
+                                        <span class="line-hr"></span>
+                                    </li>
+                                    <li class="nav-item tab-links">
+                                        <a
+                                            class=""
+                                            data-bs-toggle="tab"
+                                            href="#round-way"
+                                        >
+                                            International
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div
+                                        class="tab-pane fade show active"
+                                        id="one-way"
+                                    >
+                                        <h3>Tab 1 Content</h3>
+                                        <p>This is the content for Tab 1.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="round-way">
+                                        <h3>Tab 2 Content</h3>
+                                        <p>This is the content for Tab 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="international">
+                                <h3>Tab 2 Content</h3>
+                                <p>This is the content for Tab 2.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- banner section end  -->
