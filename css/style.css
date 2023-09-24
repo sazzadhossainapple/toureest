@@ -82,6 +82,10 @@ a {
     font-weight: 500;
 }
 
+.nav-link-text2 {
+    color: var(--primary-color) !important;
+}
+
 .nav-link-text:before {
     content: '';
     display: block;
