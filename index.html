@@ -154,50 +154,347 @@
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="local">
-                                <h3>Tab 1 Content</h3>
-                                <p>This is the content for Tab 1.</p>
-                                <!-- <ul class="nav nav-tabs" id="myTabs">
-                                    <li class="nav-item tab-links">
-                                        <a
-                                            class="active"
-                                            data-bs-toggle="tab"
-                                            href="#one-way"
-                                        >
-                                            Local</a
-                                        >
-                                    </li>
-                                    <li class="tab-line">
-                                        <span class="line-hr"></span>
-                                    </li>
-                                    <li class="nav-item tab-links">
-                                        <a
-                                            class=""
-                                            data-bs-toggle="tab"
-                                            href="#round-way"
-                                        >
-                                            International
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <div class="tab-content">
+                                <div>
                                     <div
-                                        class="tab-pane fade show active"
-                                        id="one-way"
+                                        class="d-flex align-items-center gap-3"
                                     >
-                                        <h3>Tab 1 Content</h3>
-                                        <p>This is the content for Tab 1.</p>
+                                        <div class="radio-wrapper">
+                                            <input
+                                                type="radio"
+                                                id="tab1"
+                                                name="tab"
+                                                class="custom-radio"
+                                                checked
+                                            />
+                                            <label
+                                                for="tab1"
+                                                class="tab-name tab-active"
+                                                >One Way</label
+                                            >
+                                        </div>
+                                        <div class="radio-wrapper">
+                                            <input
+                                                type="radio"
+                                                id="tab2"
+                                                name="tab"
+                                                class="custom-radio"
+                                            />
+                                            <label for="tab2" class="tab-name"
+                                                >Round Way</label
+                                            >
+                                        </div>
+                                        <div class="radio-wrapper">
+                                            <input
+                                                type="radio"
+                                                id="tab3"
+                                                name="tab"
+                                                class="custom-radio"
+                                            />
+                                            <label for="tab3" class="tab-name"
+                                                >Multi City</label
+                                            >
+                                        </div>
                                     </div>
-                                    <div class="tab-pane fade" id="round-way">
-                                        <h3>Tab 2 Content</h3>
-                                        <p>This is the content for Tab 2.</p>
+                                    <div>
+                                        <div class="search-card-conatiner mt-2">
+                                            <article>
+                                                <div class="search-card">
+                                                    <button
+                                                        type="button"
+                                                        class="search-content"
+                                                    >
+                                                        <div class="text-start">
+                                                            <span class="label"
+                                                                >From</span
+                                                            >
+                                                            <div class="value">
+                                                                Dhaka
+                                                            </div>
+                                                            <span
+                                                                class="sub-value"
+                                                            >
+                                                                DAC, Hazrat
+                                                                Shahjalal
+                                                                International
+                                                                Airport
+                                                            </span>
+                                                        </div>
+                                                    </button>
+
+                                                    <button
+                                                        type="button"
+                                                        class="search-content ps-4"
+                                                    >
+                                                        <span class="swapper"
+                                                            ><svg
+                                                                width="46"
+                                                                height="45"
+                                                                viewBox="0 0 46 45"
+                                                                fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M45.5 22.5C45.5 34.64 35.4368 44.5 23 44.5C10.5632 44.5 0.5 34.64 0.5 22.5C0.5 10.36 10.5632 0.5 23 0.5C35.4368 0.5 45.5 10.36 45.5 22.5Z"
+                                                                    fill="white"
+                                                                    stroke="#DADCDF"
+                                                                />
+                                                                <path
+                                                                    d="M26.0375 22.0375L29.75 25.75L26.0375 29.4625L24.977 28.402L26.879 26.4992L17 26.5V25H26.879L24.977 23.098L26.0375 22.0375ZM19.9625 14.5375L21.023 15.598L19.121 17.5H29V19H19.121L21.023 20.902L19.9625 21.9625L16.25 18.25L19.9625 14.5375Z"
+                                                                    fill="#1C3C6B"
+                                                                /></svg
+                                                        ></span>
+                                                        <div class="text-start">
+                                                            <span class="label"
+                                                                >To</span
+                                                            >
+                                                            <div class="value">
+                                                                Cox's Bazar
+                                                            </div>
+                                                            <span
+                                                                class="sub-value"
+                                                            >
+                                                                CXB, Cox's Bazar
+                                                                Airport
+                                                            </span>
+                                                        </div>
+                                                    </button>
+
+                                                    <div
+                                                        class="btn-group"
+                                                        role="group"
+                                                        aria-label="Basic checkbox toggle button group"
+                                                    >
+                                                        <button
+                                                            class="btn inner-button-search"
+                                                        >
+                                                            <div>
+                                                                <span
+                                                                    class="label"
+                                                                    >Journey
+                                                                    Date</span
+                                                                >
+                                                                <div
+                                                                    class="value"
+                                                                >
+                                                                    29
+                                                                    <span
+                                                                        >Sep'23</span
+                                                                    >
+                                                                </div>
+                                                                <span
+                                                                    class="sub-value"
+                                                                >
+                                                                    Friday
+                                                                </span>
+                                                            </div>
+                                                        </button>
+
+                                                        <button
+                                                            class="btn inner-button-search"
+                                                        >
+                                                            <div>
+                                                                <span
+                                                                    class="label"
+                                                                    >To</span
+                                                                >
+                                                                <div
+                                                                    class="value"
+                                                                >
+                                                                    30
+                                                                    <span
+                                                                        >Sep'23</span
+                                                                    >
+                                                                </div>
+                                                                <span
+                                                                    class="sub-value"
+                                                                >
+                                                                    Saturday
+                                                                </span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+
+                                                    <button
+                                                        type="button"
+                                                        class="search-content"
+                                                    >
+                                                        <div class="text-start">
+                                                            <span class="label"
+                                                                >Traveler,
+                                                                Class</span
+                                                            >
+                                                            <div class="value">
+                                                                1 Traveler
+                                                            </div>
+                                                            <span
+                                                                class="sub-value"
+                                                            >
+                                                                Economy
+                                                            </span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="search-card-conatiner mt-2">
+                                            <article>
+                                                <div class="search-card">
+                                                    <button
+                                                        type="button"
+                                                        class="search-content"
+                                                    >
+                                                        <div class="text-start">
+                                                            <span class="label"
+                                                                >From</span
+                                                            >
+                                                            <div class="value">
+                                                                Dhaka
+                                                            </div>
+                                                            <span
+                                                                class="sub-value"
+                                                            >
+                                                                DAC, Hazrat
+                                                                Shahjalal
+                                                                International
+                                                                Airport
+                                                            </span>
+                                                        </div>
+                                                    </button>
+
+                                                    <button
+                                                        type="button"
+                                                        class="search-content ps-4"
+                                                    >
+                                                        <span class="swapper"
+                                                            ><svg
+                                                                width="46"
+                                                                height="45"
+                                                                viewBox="0 0 46 45"
+                                                                fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M45.5 22.5C45.5 34.64 35.4368 44.5 23 44.5C10.5632 44.5 0.5 34.64 0.5 22.5C0.5 10.36 10.5632 0.5 23 0.5C35.4368 0.5 45.5 10.36 45.5 22.5Z"
+                                                                    fill="white"
+                                                                    stroke="#DADCDF"
+                                                                />
+                                                                <path
+                                                                    d="M26.0375 22.0375L29.75 25.75L26.0375 29.4625L24.977 28.402L26.879 26.4992L17 26.5V25H26.879L24.977 23.098L26.0375 22.0375ZM19.9625 14.5375L21.023 15.598L19.121 17.5H29V19H19.121L21.023 20.902L19.9625 21.9625L16.25 18.25L19.9625 14.5375Z"
+                                                                    fill="#1C3C6B"
+                                                                /></svg
+                                                        ></span>
+                                                        <div class="text-start">
+                                                            <span class="label"
+                                                                >To</span
+                                                            >
+                                                            <div class="value">
+                                                                Chattogram
+                                                            </div>
+                                                            <span
+                                                                class="sub-value"
+                                                            >
+                                                                Chattogram
+                                                                Airport
+                                                            </span>
+                                                        </div>
+                                                    </button>
+
+                                                    <div
+                                                        class="btn-group"
+                                                        role="group"
+                                                        aria-label="Basic checkbox toggle button group"
+                                                    >
+                                                        <button
+                                                            class="btn inner-button-search"
+                                                        >
+                                                            <div>
+                                                                <span
+                                                                    class="label"
+                                                                    >Journey
+                                                                    Date</span
+                                                                >
+                                                                <div
+                                                                    class="value"
+                                                                >
+                                                                    30
+                                                                    <span
+                                                                        >Sep'23</span
+                                                                    >
+                                                                </div>
+                                                                <span
+                                                                    class="sub-value"
+                                                                >
+                                                                    Friday
+                                                                </span>
+                                                            </div>
+                                                        </button>
+
+                                                        <button
+                                                            class="btn inner-button-search"
+                                                        >
+                                                            <div>
+                                                                <span
+                                                                    class="label"
+                                                                    >To</span
+                                                                >
+                                                                <div
+                                                                    class="value"
+                                                                >
+                                                                    1
+                                                                    <span
+                                                                        >Oct'23</span
+                                                                    >
+                                                                </div>
+                                                                <span
+                                                                    class="sub-value"
+                                                                >
+                                                                    Saturday
+                                                                </span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+
+                                                    <button
+                                                        type="button"
+                                                        class="search-content"
+                                                    >
+                                                        <div class="text-start">
+                                                            <span class="label"
+                                                                >Traveler,
+                                                                Class</span
+                                                            >
+                                                            <div class="value">
+                                                                5 Traveler
+                                                            </div>
+                                                            <span
+                                                                class="sub-value"
+                                                            >
+                                                                Economy
+                                                            </span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="search-card-conatiner mt-2">
+                                            <article>
+                                                <h2>article3</h2>
+                                            </article>
+                                        </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="international">
                                 <h3>Tab 2 Content</h3>
                                 <p>This is the content for Tab 2.</p>
                             </div>
+                        </div>
+
+                        <div class="search-btn-container">
+                            <button type="button" class="search-btn">
+                                Search
+                            </button>
                         </div>
                     </div>
                 </div>

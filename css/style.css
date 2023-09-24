@@ -147,7 +147,7 @@ a {
     -webkit-box-shadow: 0 20px 100px 10px rgba(24, 33, 77, 0.05);
     box-shadow: 0 20px 100px 10px rgba(24, 33, 77, 0.05);
     border-radius: 20px;
-    padding: 50px 30px 40px;
+    padding: 50px 30px 32px;
 }
 
 .header-search {
@@ -256,6 +256,154 @@ a {
 
 .box span.sub-value {
     color: #5d6974;
+}
+
+.radio-wrapper {
+    cursor: pointer;
+    font-size: 16px;
+    color: #bbc5d3;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.tab-name:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.tab-active {
+    color: var(--primary-color);
+}
+/* Style the custom radio button */
+.custom-radio {
+    appearance: none; /* Hide the default radio button appearance */
+    -webkit-appearance: none; /* For older versions of Safari */
+    width: 16px; /* Adjust this value to change the radio button size */
+    height: 16px; /* Adjust this value to change the radio button size */
+    border: 2px solid #bbc5d3; /* Border color for the unchecked state */
+    background-color: white; /* Background color for the unchecked state */
+    border-radius: 50%; /* Make it round */
+    outline: none; /* Remove the outline when focused */
+    cursor: pointer;
+}
+
+/* Style the custom radio button when checked */
+.custom-radio:checked {
+    background-color: var(
+        --primary-color
+    ); /* Background color for the checked state */
+    border: 2px solid var(--primary-color); /* Border color for the checked state */
+}
+
+/* Optional: Add a hover effect */
+.custom-radio:hover {
+    border: 2px solid var(--primary-color); /* Border color on hover */
+}
+
+article {
+    display: none;
+    cursor: pointer;
+}
+article.on {
+    display: block;
+    cursor: pointer;
+}
+
+.search-card {
+    display: grid;
+    grid-template-columns: 23% 23% 31% 20%;
+    gap: 0.6rem;
+    /* justify-items: center; */
+}
+
+.search-card .search-content {
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid #dbdde0;
+    cursor: pointer;
+    position: relative;
+}
+
+/* search icon */
+
+.swapper {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: -10px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inner-button-search {
+    /* padding: 8px 15px; */
+    border-radius: 10px;
+    border: 1px solid #dbdde0 !important;
+    cursor: pointer;
+    background-color: #ffffff !important;
+    text-align: start;
+}
+.label {
+    text-transform: uppercase;
+    color: #1c3c6b;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+.value {
+    font-size: 1rem;
+    line-height: 6px;
+    font-weight: 700;
+    color: #1c3c6b;
+}
+
+.sub-value {
+    margin-top: 0;
+    font-size: 12px;
+    color: #5d6974;
+    line-height: 14px;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 98%;
+}
+
+.search-content-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sub-value.inline-style {
+    white-space: normal;
+}
+.value span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.search-btn-container button.search-btn {
+    border: 0;
+    background-color: #fccd03;
+    color: #1c3c6b;
+    border-radius: 10px;
+    padding: 12px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    outline: none;
 }
 
 /* search css end */
