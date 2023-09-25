@@ -99,11 +99,81 @@
         </header>
 
         <main class="vh-100">
-            <div class="bg-white my-4">
-                <div class="container">asfasfasd</div>
+            <div class="bg-white my-5">
+                <div class="container">
+                    <div
+                        class="mx-lg-5 px-lg-5 d-flex align-items-center gap-3 search-field"
+                    >
+                        <input
+                            type="text"
+                            class="form-control py-2"
+                            placeholder="Search location"
+                        />
+                        <button type="button" class="btn btns-search py-2">
+                            Search
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="bg-body-color">
-                <div class="container">hello</div>
+                <div class="container py-5">
+                    <div class="allPackpage-container">
+                        <div class="left">
+                            <p class="place-found">
+                                Destination : <span>29</span> places found
+                            </p>
+                            <p class="place-found mt-2 mb-0">Filter By</p>
+                            <hr />
+
+                            <p class="place-found">Price Range :</p>
+
+                            <!-- price range -->
+
+                            <div class="slider mt-4">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                                <input
+                                    type="range"
+                                    class="range-min"
+                                    min="0"
+                                    max="10000"
+                                    value="1000"
+                                    step="100"
+                                />
+                                <input
+                                    type="range"
+                                    class="range-max"
+                                    min="0"
+                                    max="10000"
+                                    value="7500"
+                                    step="100"
+                                />
+                            </div>
+                            <div
+                                class="price-input mt-2 d-flex align-items-center justify-content-between"
+                            >
+                                <div class="field d-flex align-items-center">
+                                    <span class="pe-1">BDT</span>
+                                    <input
+                                        type="number"
+                                        class="input-min"
+                                        value="1000"
+                                    />
+                                </div>
+                                <div class="field d-flex align-items-center">
+                                    <span class="pe-1">BDT</span>
+                                    <input
+                                        type="number"
+                                        class="input-max"
+                                        value="30000"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">2</div>
+                    </div>
+                </div>
             </div>
         </main>
 
