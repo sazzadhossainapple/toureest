@@ -833,7 +833,33 @@ input[type='range']::-moz-range-thumb {
     background: var(--primary-color) !important;
     color: #ffffff !important;
 }
+
+.input-text {
+    font-size: 14px;
+}
+.form-title {
+    color: var(--primary-color) !important;
+}
 /* all package page css end */
+
+/* login css start */
+.sign-container {
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    gap: 3rem;
+}
+.sign-img {
+    width: 50%;
+}
+
+.sign-img img {
+    width: 100%;
+}
+.sign-content {
+    width: 50%;
+}
+/* login css end */
 
 /* footer start */
 

@@ -36,9 +36,9 @@
     </head>
 
     <body class="">
-        <header class="bg-body-color">
+        <header>
             <!-- header start -->
-            <div class="">
+            <div class="bg-white shadow-sm">
                 <nav class="navbar navbar-expand-lg container py-4">
                     <div class="container-fluid">
                         <div>
@@ -98,14 +98,103 @@
             <!-- header end -->
         </header>
 
-        <main class="bg-body-color">
-            <div class="container">
-                <div class="sign-container">
-                    <div class="sign-img">
-                        <img src="./assets/image/login/sign.png" alt="" />
-                    </div>
-                    <div class="sign-content">
-                        <h4 class="title mb-4">Log in to Toureest</h4>
+        <main>
+            <div class="bg-body-color">
+                <div class="container py-5">
+                    <div class="bg-white rounded p-4 p-md-5">
+                        <h4 class="title text-center mb-4">
+                            Request A Custom Tour
+                        </h4>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label form-title mb-2"
+                                    >Where do you want to go?</label
+                                >
+                                <select
+                                    class="form-select form-control py-2 input-text"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>
+                                        Open this select menu
+                                    </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label form-title mb-2"
+                                    >When do you want to go?</label
+                                >
+                                <input
+                                    type="date"
+                                    class="form-control py-2 input-text"
+                                />
+                            </div>
+
+                            <div class="row">
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >First Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control py-2 input-text"
+                                        placeholder="Enter first name"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >Last Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control py-2 input-text"
+                                        placeholder="Enter last name"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >Phone Number</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control py-2 input-text"
+                                        placeholder="Enter your phone number"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >Email Address</label
+                                    >
+                                    <input
+                                        type="email"
+                                        class="form-control py-2 input-text"
+                                        placeholder="example@gmail.com"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label form-title mb-2"
+                                    >Additional Requirement</label
+                                >
+                                <textarea
+                                    class="form-control input-text"
+                                    placeholder="Enter your requirements"
+                                    id="floatingTextarea2"
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button
+                                    type="submit"
+                                    class="btn btns-search py-2 mt-3"
+                                >
+                                    Request Plan
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
