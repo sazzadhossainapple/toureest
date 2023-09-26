@@ -36,9 +36,9 @@
     </head>
 
     <body class="">
-        <header class="bg-body-color">
+        <header>
             <!-- header start -->
-            <div class="">
+            <div class="bg-white shadow-sm">
                 <nav class="navbar navbar-expand-lg container py-4">
                     <div class="container-fluid">
                         <div>
@@ -98,133 +98,103 @@
             <!-- header end -->
         </header>
 
-        <main class="bg-body-color">
-            <div class="container">
-                <div class="sign-container">
-                    <div class="sign-img">
-                        <img src="./assets/image/login/sign.png" alt="" />
-                    </div>
-                    <div class="sign-content">
-                        <h4 class="title login-tilte">Log in to Toureest</h4>
-                        <div class="row gx-3">
-                            <div class="col-8">
-                                <button
-                                    class="btn sign-btn d-flex align-items-center gap-2 justify-content-center shadow w-100"
-                                >
-                                    <img
-                                        class="login-icon"
-                                        src="./assets/image/login/google.png"
-                                        alt=""
-                                    />
-                                    Sign up with Google
-                                </button>
-                            </div>
-                            <div class="col-2">
-                                <button
-                                    class="btn sign-btn d-flex align-items-center justify-content-center shadow p-3 w-100"
-                                >
-                                    <img
-                                        class="login-icon"
-                                        src="./assets/image/login/facebook.png"
-                                        alt=""
-                                    />
-                                </button>
-                            </div>
-                            <div class="col-2">
-                                <button
-                                    class="btn sign-btn d-flex align-items-center justify-content-center shadow p-3 w-100"
-                                >
-                                    <img
-                                        class="login-icon"
-                                        src="./assets/image/login/apple.png"
-                                        alt=""
-                                    />
-                                </button>
-                            </div>
-                        </div>
-                        <div class="divider py-4">
-                            <div class="left-line"></div>
-                            <div class="centered-text text-black fw-semibold">
-                                Or
-                            </div>
-                            <div class="right-line"></div>
-                        </div>
+        <main>
+            <div class="bg-body-color">
+                <div class="container py-5">
+                    <div class="bg-white rounded p-4 p-md-5">
+                        <h4 class="title text-center mb-4">
+                            Request A Custom Tour
+                        </h4>
                         <form>
                             <div class="mb-3">
-                                <label
-                                    for="exampleInputEmail1"
-                                    class="form-label fw-semibold login-label"
-                                    >Email address</label
+                                <label class="form-label form-title mb-2"
+                                    >Where do you want to go?</label
                                 >
+                                <select
+                                    class="form-select form-control py-2 input-text"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>
+                                        Open this select menu
+                                    </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
 
-                                <div class="input-group">
+                            <div class="mb-3">
+                                <label class="form-label form-title mb-2"
+                                    >When do you want to go?</label
+                                >
+                                <input
+                                    type="date"
+                                    class="form-control py-2 input-text"
+                                />
+                            </div>
+
+                            <div class="row">
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >First Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control py-2 input-text"
+                                        placeholder="Enter first name"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >Last Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control py-2 input-text"
+                                        placeholder="Enter last name"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >Phone Number</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control py-2 input-text"
+                                        placeholder="Enter your phone number"
+                                    />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label form-title mb-2"
+                                        >Email Address</label
+                                    >
                                     <input
                                         type="email"
-                                        class="form-control login-input border-end-0"
+                                        class="form-control py-2 input-text"
+                                        placeholder="example@gmail.com"
                                     />
-                                    <span
-                                        class="input-group-text"
-                                        style="cursor: pointer"
-                                    >
-                                        <i
-                                            class="fa-solid fa-envelope email-icon"
-                                        ></i
-                                    ></span>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label
-                                    for="passwordInput"
-                                    class="form-label fw-semibold login-label"
-                                    >Password</label
+                                <label class="form-label form-title mb-2"
+                                    >Additional Requirement</label
                                 >
-                                <div class="input-group">
-                                    <input
-                                        type="password"
-                                        class="form-control login-input border-end-0"
-                                        id="passwordInput"
-                                    />
-                                    <span
-                                        class="input-group-text"
-                                        style="cursor: pointer"
-                                    >
-                                        <i
-                                            id="togglePassword"
-                                            class="fa-solid fa-eye-slash email-icon"
-                                        ></i>
-                                    </span>
-                                </div>
+                                <textarea
+                                    class="form-control input-text"
+                                    placeholder="Enter your requirements"
+                                    id="floatingTextarea2"
+                                    rows="5"
+                                ></textarea>
                             </div>
-                            <div class="mb-3 form-check">
-                                <input
-                                    type="checkbox"
-                                    class="form-check-input rem-pass-check"
-                                    id="exampleCheck1"
-                                />
-                                <label
-                                    class="form-check-label rem-pass"
-                                    for="exampleCheck1"
-                                    >Remember password</label
-                                >
-                            </div>
-
-                            <div class="">
+                            <div class="d-flex justify-content-center">
                                 <button
                                     type="submit"
-                                    class="btn login-btn w-100"
+                                    class="btn btns-search py-2 mt-3"
                                 >
-                                    Sign in
+                                    Request Plan
                                 </button>
                             </div>
                         </form>
-                        <p class="mt-2 text-center sign-link">
-                            Don’t have account?<a
-                                href="sign-up.html"
-                                class="text-black fw-medium sign-text"
-                            >
-                                Sign up</a
-                            >
-                        </p>
                     </div>
                 </div>
             </div>

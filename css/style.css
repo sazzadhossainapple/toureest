@@ -833,7 +833,115 @@ input[type='range']::-moz-range-thumb {
     background: var(--primary-color) !important;
     color: #ffffff !important;
 }
+
+.input-text {
+    font-size: 14px;
+}
+.form-title {
+    color: var(--primary-color) !important;
+}
 /* all package page css end */
+
+/* login css start */
+.sign-container {
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    align-items: center;
+    gap: 4rem;
+}
+.sign-img {
+    width: 60%;
+}
+
+.sign-img img {
+    width: 100%;
+}
+.sign-content {
+    width: 40%;
+}
+
+.sign-btn {
+    background-color: #ffffff !important;
+    padding: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #ffffff !important;
+}
+
+.login-icon {
+    width: 16px;
+}
+.login-tilte {
+    font-size: 22px !important;
+    margin-bottom: 2.3rem;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-line,
+.right-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #dbdde0;
+}
+
+.centered-text {
+    padding: 0 5px;
+}
+.login-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.login-input:focus {
+    border-bottom: 1px solid #dee2e6 !important;
+    border-left: 1px solid #dee2e6 !important;
+    border-top: 1px solid #dee2e6 !important;
+}
+.rem-pass {
+    color: #5d6974;
+    font-size: 14px;
+}
+
+.rem-pass-check:checked {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+.rem-pass-check:focus {
+    border-color: var(--primary-color) !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.login-btn {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--primary-color) !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.login-label {
+    font-size: 15px;
+}
+
+.email-icon {
+    /* position: absolute;
+    top: 31%;
+    right: 3.5%; */
+    font-size: 18px;
+    color: #c4c4c5;
+}
+
+.sign-link {
+    font-size: 14px;
+    color: #5d6974;
+}
+.sign-text:hover {
+    text-decoration: underline;
+}
+/* login css end */
 
 /* footer start */
 

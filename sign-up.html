@@ -105,7 +105,7 @@
                         <img src="./assets/image/login/sign.png" alt="" />
                     </div>
                     <div class="sign-content">
-                        <h4 class="title login-tilte">Log in to Toureest</h4>
+                        <h4 class="title login-tilte">Sign up to Toureest</h4>
                         <div class="row gx-3">
                             <div class="col-8">
                                 <button
@@ -152,6 +152,45 @@
                         <form>
                             <div class="mb-3">
                                 <label
+                                    class="form-label fw-semibold login-label"
+                                    >Full Name</label
+                                >
+
+                                <div class="input-group">
+                                    <input
+                                        type="text"
+                                        class="form-control login-input"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label
+                                    class="form-label fw-semibold login-label"
+                                    >Phone Number</label
+                                >
+
+                                <div class="input-group">
+                                    <input
+                                        type="text"
+                                        class="form-control login-input"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label
+                                    class="form-label fw-semibold login-label"
+                                    >NID</label
+                                >
+
+                                <div class="input-group">
+                                    <input
+                                        type="text"
+                                        class="form-control login-input"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label
                                     for="exampleInputEmail1"
                                     class="form-label fw-semibold login-label"
                                     >Email address</label
@@ -160,16 +199,8 @@
                                 <div class="input-group">
                                     <input
                                         type="email"
-                                        class="form-control login-input border-end-0"
+                                        class="form-control login-input"
                                     />
-                                    <span
-                                        class="input-group-text"
-                                        style="cursor: pointer"
-                                    >
-                                        <i
-                                            class="fa-solid fa-envelope email-icon"
-                                        ></i
-                                    ></span>
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -180,19 +211,10 @@
                                 >
                                 <div class="input-group">
                                     <input
-                                        type="password"
-                                        class="form-control login-input border-end-0"
+                                        type="text"
+                                        class="form-control login-input"
                                         id="passwordInput"
                                     />
-                                    <span
-                                        class="input-group-text"
-                                        style="cursor: pointer"
-                                    >
-                                        <i
-                                            id="togglePassword"
-                                            class="fa-solid fa-eye-slash email-icon"
-                                        ></i>
-                                    </span>
                                 </div>
                             </div>
                             <div class="mb-3 form-check">
@@ -204,7 +226,14 @@
                                 <label
                                     class="form-check-label rem-pass"
                                     for="exampleCheck1"
-                                    >Remember password</label
+                                    >By joining, you agree to the
+                                    <a href="" class="sign-text"
+                                        >Terms of Service</a
+                                    >
+                                    and
+                                    <a href="" class="sign-text"
+                                        >Privacy Policy</a
+                                    >.</label
                                 >
                             </div>
 
@@ -213,16 +242,16 @@
                                     type="submit"
                                     class="btn login-btn w-100"
                                 >
-                                    Sign in
+                                    Sign up
                                 </button>
                             </div>
                         </form>
                         <p class="mt-2 text-center sign-link">
-                            Don’t have account?<a
-                                href="sign-up.html"
+                            Already have account?<a
+                                href="login.html"
                                 class="text-black fw-medium sign-text"
                             >
-                                Sign up</a
+                                Sign in</a
                             >
                         </p>
                     </div>
