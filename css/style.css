@@ -963,16 +963,18 @@ input[type='range']::-moz-range-thumb {
 .img-display {
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .img-showcase {
     border-bottom-left-radius: 10px !important;
     border-top-left-radius: 10px !important;
+    height: 100%;
 }
 
 .img-showcase img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-bottom-left-radius: 10px !important;
     border-top-left-radius: 10px !important;
 }
@@ -980,6 +982,10 @@ input[type='range']::-moz-range-thumb {
 .thumbnail-link {
     cursor: pointer;
 }
+.img-item:frist-child .thumbnail-link {
+    margin-top: 0; /* Remove margin for the last image */
+}
+
 .img-item:last-child .thumbnail-link {
     margin-bottom: 0; /* Remove margin for the last image */
 }
@@ -999,7 +1005,7 @@ input[type='range']::-moz-range-thumb {
     flex-direction: column;
     gap: 10px;
     overflow-y: auto;
-    max-height: 400px;
+    max-height: 500px;
 }
 
 .small-img::-webkit-scrollbar {
@@ -1013,6 +1019,35 @@ input[type='range']::-moz-range-thumb {
 }
 .tour-grid-right {
     width: 40%;
+}
+
+.tourieest-company {
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.company-title {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.visit-company {
+    background-color: #fccd03;
+    padding: 2px 20px;
+    border-radius: 3px;
+}
+.visit-company a {
+    font-size: 12px;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+.rating-posivite {
+    font-size: 12px;
+}
+.rating-percentage {
+    font-size: 12px;
+    font-weight: 700;
 }
 /* tour details end */
 
