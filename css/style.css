@@ -1060,6 +1060,9 @@ input[type='range']::-moz-range-thumb {
     font-weight: 500;
     color: var(--primary-color);
 }
+.tab-link-text:hover {
+    color: #4073bf;
+}
 .details-content {
     display: flex;
     gap: 2rem;
