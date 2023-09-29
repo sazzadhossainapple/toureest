@@ -1049,6 +1049,61 @@ input[type='range']::-moz-range-thumb {
     font-size: 12px;
     font-weight: 700;
 }
+
+.tab-contianer {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+    flex-wrap: wrap;
+}
+.tab-link-text {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.details-content {
+    display: flex;
+    gap: 2rem;
+}
+.details-content-left {
+    width: 60%;
+}
+
+.accordions {
+    /* margin: 20px auto; */
+}
+
+.accordion-items {
+    margin-bottom: 5px;
+}
+
+.accordion-headings {
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.accordion-contents {
+    display: block;
+    padding: 10px 10px 0px 35px;
+}
+.tour-content {
+    font-size: 15px;
+    color: #5d6974;
+    text-align: justify;
+}
+
+.details-content-right {
+    width: 40%;
+}
+.tour-list {
+    font-size: 14px;
+}
 /* tour details end */
 
 /* footer start */
