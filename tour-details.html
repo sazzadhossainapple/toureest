@@ -53,7 +53,9 @@
                             class="collapse navbar-collapse justify-content-end"
                             id="navbarNavDropdown"
                         >
-                            <ul class="navbar-nav text-end gap-5">
+                            <ul
+                                class="navbar-nav text-lg-end gap-sm-1 gap-md-2 gap-lg-5"
+                            >
                                 <li class="nav-item">
                                     <a
                                         class="nav-link nav-link-text nav-link-text2"
@@ -91,6 +93,19 @@
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+                        <div>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                         </div>
                     </div>
                 </nav>
@@ -326,18 +341,30 @@
                     <div class="bg-white mt-5 rounded py-4">
                         <ul class="tab-contianer px-4">
                             <li>
-                                <a href="" class="tab-link-text">Overview</a>
+                                <a href="#overview" class="tab-link-text"
+                                    >Overview</a
+                                >
                             </li>
                             <li>
-                                <a href="" class="tab-link-text">Itinerary</a>
+                                <a href="#itinerary" class="tab-link-text"
+                                    >Itinerary</a
+                                >
                             </li>
                             <li>
-                                <a href="" class="tab-link-text">Inclusion</a>
+                                <a href="#inclusion" class="tab-link-text"
+                                    >Inclusion</a
+                                >
                             </li>
                             <li>
-                                <a href="" class="tab-link-text">Exclusion</a>
+                                <a href="#exclusion" class="tab-link-text"
+                                    >Exclusion</a
+                                >
                             </li>
-                            <li><a href="" class="tab-link-text">Policy</a></li>
+                            <li>
+                                <a href="#policy" class="tab-link-text"
+                                    >Policy</a
+                                >
+                            </li>
                         </ul>
                         <hr />
 
@@ -345,7 +372,7 @@
                         <div class="details-content px-4">
                             <div class="details-content-left">
                                 <!-- Details start -->
-                                <section>
+                                <section id="overview">
                                     <div class="accordions">
                                         <div class="accordion-items">
                                             <div class="accordion-headings">
@@ -532,7 +559,7 @@
                                 <hr />
 
                                 <!-- Itinerary start -->
-                                <section>
+                                <section id="itinerary">
                                     <div class="accordions">
                                         <div class="accordion-items">
                                             <div class="accordion-headings">
@@ -719,7 +746,7 @@
                                 <hr />
 
                                 <!-- Inclusion start -->
-                                <section>
+                                <section id="inclusion">
                                     <div class="accordions">
                                         <div class="accordion-items">
                                             <div class="accordion-headings">
@@ -794,7 +821,7 @@
                                 <hr />
 
                                 <!-- Inclusion start -->
-                                <section>
+                                <section id="exclusion">
                                     <div class="accordions">
                                         <div class="accordion-items">
                                             <div class="accordion-headings">
@@ -858,7 +885,7 @@
                                 <hr />
 
                                 <!-- Policy start -->
-                                <section>
+                                <section id="policy">
                                     <div class="accordions">
                                         <div class="accordion-items">
                                             <div class="accordion-headings">
@@ -1015,30 +1042,219 @@
                             </div>
                             <div class="details-content-right">
                                 <div class="booking-container shadow-sm mt-4">
-                                    <div class="mb-3">
-                                        <button
-                                            class="btn btn-date w-100 d-flex flex-column"
-                                        >
-                                            <span class="date-title"
-                                                >Journey Date</span
+                                    <!-- calender start -->
+                                    <div class="calendar-container">
+                                        <div class="wrappers">
+                                            <div class="calender-head">
+                                                <p class="current-date"></p>
+                                                <div class="icons">
+                                                    <span
+                                                        id="prev"
+                                                        class="material-symbols-rounded"
+                                                        ><i
+                                                            class="fa-solid fa-chevron-left"
+                                                        ></i
+                                                    ></span>
+                                                    <span
+                                                        id="next"
+                                                        class="material-symbols-rounded"
+                                                        ><i
+                                                            class="fa-solid fa-chevron-right"
+                                                        ></i
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div class="calendar">
+                                                <ul class="weeks">
+                                                    <li>Sun</li>
+                                                    <li>Mon</li>
+                                                    <li>Tue</li>
+                                                    <li>Wed</li>
+                                                    <li>Thu</li>
+                                                    <li>Fri</li>
+                                                    <li>Sat</li>
+                                                </ul>
+                                                <ul class="days"></ul>
+                                            </div>
+                                        </div>
+                                        <div class="input-wrapper mb-3">
+                                            <button
+                                                class="btn btn-date w-100 d-flex flex-column"
+                                                id="datepicker"
                                             >
-                                            <span class="date-text"
-                                                >18 Sep’23</span
-                                            >
-                                        </button>
+                                                <span class="date-title"
+                                                    >Journey Date</span
+                                                >
+                                                <span class="date-text"></span>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <button
-                                            class="btn btn-date w-100 d-flex flex-column"
-                                        >
-                                            <span class="date-title"
-                                                >Travelers</span
+
+                                    <!-- adult start -->
+                                    <div class="adult-container">
+                                        <div class="adult-wrappers p-4">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between"
                                             >
-                                            <span class="date-text"
-                                                >2 Adult</span
+                                                <div>
+                                                    <p class="adult-text">
+                                                        Adult
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center gap-2"
+                                                >
+                                                    <button class="btn-adult">
+                                                        <i
+                                                            class="fa-solid fa-minus"
+                                                            style="
+                                                                font-size: 14px;
+                                                            "
+                                                        ></i>
+                                                    </button>
+                                                    <span id="text-adult"
+                                                        >0</span
+                                                    >
+                                                    <button class="btn-adult">
+                                                        <i
+                                                            class="fa-solid fa-plus"
+                                                            style="
+                                                                font-size: 14px;
+                                                            "
+                                                        ></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div
+                                                class="d-flex align-items-center justify-content-between"
                                             >
-                                        </button>
+                                                <div>
+                                                    <p
+                                                        class="d-flex flex-column"
+                                                    >
+                                                        <span class="adult-text"
+                                                            >Children</span
+                                                        >
+                                                        <span
+                                                            class="text-secondary-emphasis"
+                                                            style="
+                                                                font-size: 12px;
+                                                            "
+                                                            >3-7 Years</span
+                                                        >
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center gap-2"
+                                                >
+                                                    <button
+                                                        class="btn-children"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-minus"
+                                                            style="
+                                                                font-size: 14px;
+                                                            "
+                                                        ></i>
+                                                    </button>
+                                                    <span id="text-children"
+                                                        >0</span
+                                                    >
+                                                    <button
+                                                        class="btn-children"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-plus"
+                                                            style="
+                                                                font-size: 14px;
+                                                            "
+                                                        ></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div
+                                                class="d-flex align-items-center justify-content-between"
+                                            >
+                                                <div>
+                                                    <p
+                                                        class="d-flex flex-column"
+                                                    >
+                                                        <span class="adult-text"
+                                                            >Infant</span
+                                                        >
+                                                        <span
+                                                            class="text-secondary-emphasis"
+                                                            style="
+                                                                font-size: 12px;
+                                                            "
+                                                            >Below 3</span
+                                                        >
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center gap-2"
+                                                >
+                                                    <button class="btn-infant">
+                                                        <i
+                                                            class="fa-solid fa-minus"
+                                                            style="
+                                                                font-size: 14px;
+                                                            "
+                                                        ></i>
+                                                    </button>
+                                                    <span id="text-infant"
+                                                        >0</span
+                                                    >
+                                                    <button class="btn-infant">
+                                                        <i
+                                                            class="fa-solid fa-plus"
+                                                            style="
+                                                                font-size: 14px;
+                                                            "
+                                                        ></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div
+                                                class="d-flex justify-content-end"
+                                            >
+                                                <button
+                                                    class="btn btn-done"
+                                                    id="done"
+                                                >
+                                                    Done
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button
+                                                class="btn btn-date w-100 d-flex flex-column"
+                                                id="adult"
+                                            >
+                                                <p class="date-title">
+                                                    Travelers
+                                                </p>
+                                                <div class="d-flex gap-2">
+                                                    <p
+                                                        class="date-text adult-count"
+                                                    ></p>
+                                                    ,
+                                                    <p
+                                                        class="date-text children-count"
+                                                    ></p>
+                                                    ,
+                                                    <p
+                                                        class="date-text infant-count"
+                                                    ></p>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
+
+                                    <!-- options start -->
                                     <div class="mb-3">
                                         <label
                                             for=""
@@ -1047,7 +1263,7 @@
                                             >Options</label
                                         >
                                         <select
-                                            class="form-select slect-options"
+                                            class="form-select slect-options py-3"
                                             aria-label="Default select example"
                                         >
                                             <option selected>
@@ -1065,12 +1281,12 @@
                                         <p class="amount-tour mb-1">
                                             BDT <span>1000</span>
                                         </p>
-                                        <button
-                                            type="button"
+                                        <a
+                                            href="booking.html"
                                             class="btn btns-search py-1 fw-medium"
                                         >
                                             Continue
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="booking-container shadow-sm mt-4">
@@ -1517,6 +1733,10 @@
             );
         </script>
 
+        <!-- calender js -->
+        <script src="./js/calender.js"></script>
+        <!-- travel number -->
+        <script src="./js/travelNumber.js"></script>
         <!-- custom js -->
         <script src="./js/tourImg.js"></script>
         <script src="./js/accordion.js"></script>
