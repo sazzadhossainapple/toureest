@@ -46,6 +46,18 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+
 .form-control:focus {
     border-color: var(--primary-color) !important;
     outline: 0;
@@ -53,6 +65,35 @@ a {
 }
 
 /* home page css start */
+
+/* search dropdown start */
+#dropdown-content {
+    display: none;
+    position: absolute;
+    width: 30%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown-content ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#dropdown-content ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* search dropdown end */
 
 #brand-header {
     background-color: transparent !important;
@@ -765,6 +806,12 @@ input[type='range']::-moz-range-thumb {
 .left-packages {
     width: 40%;
 }
+.left-image {
+    height: 200px;
+}
+.left-image img {
+    object-fit: cover;
+}
 .left-packages img {
     width: 100%;
     height: 100%;
@@ -950,6 +997,189 @@ input[type='range']::-moz-range-thumb {
 /* login css end */
 
 /* ============= tour details start ============== */
+
+/* calender added */
+.input-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#datepicker {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.wrappers {
+    display: none;
+}
+
+.wrappers.show-calendar {
+    display: block;
+}
+
+.calendar-container {
+    position: relative;
+}
+.wrappers {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    top: 5rem;
+    z-index: 10;
+}
+.wrappers .calender-head {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+.calender-head .icons {
+    display: flex;
+}
+.calender-head .icons span {
+    height: 24px;
+    width: 24px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 24px;
+    font-size: 0.7rem;
+    user-select: none;
+    border-radius: 50%;
+}
+.icons span:last-child {
+    margin-right: -10px;
+}
+.calender-head .icons span:hover {
+    background: #f2f2f2;
+}
+.calender-head .current-date {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.calendar {
+    padding: 20px;
+}
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+.calendar .days {
+    margin-bottom: 20px;
+}
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 0.9rem;
+}
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+.days li.inactive {
+    color: #aaa;
+}
+.days li.active {
+    color: #fff;
+}
+.days li::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li.active::before {
+    background: #fccd03;
+}
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
+
+/* calender end */
+
+/* adult start */
+.adult-wrappers {
+    display: none;
+}
+
+.adult-wrappers.show-adult {
+    display: block;
+}
+
+.adult-container {
+    position: relative;
+}
+.adult-wrappers {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    top: 5rem;
+    z-index: 10;
+}
+.adult-text {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.btn-adult {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.btn-infant {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+    border: 1px solid var(--primary-color) !important;
+}
+.btn-children {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.btn-done {
+    background-color: var(--secondary-color) !important;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* adult end */
+
 .tour-grid {
     display: flex;
     gap: 1rem;
@@ -1201,6 +1431,146 @@ input[type='range']::-moz-range-thumb {
 }
 /* tour details end */
 
+/* blog start */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.blog-card {
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+    height: 100%;
+    padding: 20px;
+}
+
+.card-img {
+    /* height: 300px; */
+    height: 265px;
+    width: 100%;
+    /* padding: 1rem 1rem 1.5rem; */
+    padding-bottom: 1rem;
+}
+.card-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-date-time {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.blog-text-desc {
+    color: #212529 !important;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 15px !important;
+}
+.blog-name-title h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.link-learnMore {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+}
+.blog-date-time span {
+    color: #607d8b;
+    font-size: 14px;
+}
+
+.blog-details-img {
+    height: 500px !important;
+    margin-top: 2.5rem;
+}
+.blog-single-title h4 {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+.blog-text-desc {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 15px !important;
+}
+.share-icon {
+    font-size: 20px;
+    color: var(--primary-color) !important;
+}
+
+/* blog end */
+
+/* contact start */
+.login-contnet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+}
+.sign-title {
+    color: rgb(35 29 79);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.sign-icon {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.sign-icon-text {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.phone-number {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+.login-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b7280;
+    line-height: 1.25rem;
+}
+
+.login-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.form-input {
+    background-color: rgb(244 244 244) !important;
+}
+.form-input::placeholder {
+    color: #6b7280 !important;
+    font-size: 14px;
+}
+.btn-form {
+    border: 1px solid var(--primary-color) !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+.btn-form:hover,
+.btn-form:focus {
+    box-shadow: inset 40rem 0 0 0 rgb(31 60 136) !important;
+    width: 100% !important;
+    transition: all 0.3s;
+    border: 1px solid rgb(31 60 136) !important ;
+}
+/* contact end */
+
 /* footer start */
 
 .footer {
@@ -1254,6 +1624,42 @@ input[type='range']::-moz-range-thumb {
 
 /* footer end */
 
+/* booking start */
+.booking-containers {
+    display: flex;
+    gap: 3rem;
+}
+
+.booking-left {
+    width: 65%;
+}
+.booking-right {
+    width: 35%;
+}
+
+.btn-gender {
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    color: #ffffff !important;
+}
+.btn-submit {
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--secondary-color) !important;
+}
+
+.booking-img {
+    width: 30%;
+}
+
+.booking-img img {
+    width: 100%;
+}
+.booking-tour {
+    font-size: 14px;
+    color: #2b2b2b;
+}
+/* booking end */
+
 /* ====== tablet device ====== */
 @media screen and (max-width: 1024px) {
     #navbarNavDropdown {
@@ -1306,6 +1712,21 @@ input[type='range']::-moz-range-thumb {
         border-bottom-left-radius: 0px;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
+    }
+    .login-contnet {
+        grid-template-columns: 1fr;
+    }
+    .booking-containers {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .booking-left {
+        width: 100%;
+    }
+    .booking-right {
+        width: 100%;
     }
 }
 
@@ -1366,6 +1787,24 @@ input[type='range']::-moz-range-thumb {
     .search-card {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+    .blog-container {
+        grid-template-columns: 2fr;
+    }
+    .login-contnet {
+        grid-template-columns: 1fr;
+    }
+    .booking-containers {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .booking-left {
+        width: 100%;
+    }
+    .booking-right {
+        width: 100%;
     }
 }
 
@@ -1429,6 +1868,24 @@ input[type='range']::-moz-range-thumb {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+    .login-contnet {
+        grid-template-columns: 1fr;
+    }
+    .booking-containers {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .booking-left {
+        width: 100%;
+    }
+    .booking-right {
+        width: 100%;
+    }
 }
 
 /* ======small device ======*/
@@ -1491,5 +1948,23 @@ input[type='range']::-moz-range-thumb {
     .search-card {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+    .login-contnet {
+        grid-template-columns: 1fr;
+    }
+    .booking-containers {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .booking-left {
+        width: 100%;
+    }
+    .booking-right {
+        width: 100%;
     }
 }

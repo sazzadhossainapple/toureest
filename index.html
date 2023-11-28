@@ -215,10 +215,13 @@
                                     <div>
                                         <div class="search-card-conatiner mt-2">
                                             <article>
-                                                <div class="search-card">
+                                                <div
+                                                    class="search-card position-relative"
+                                                >
                                                     <button
                                                         type="button"
                                                         class="search-content"
+                                                        id="dropdown-button"
                                                     >
                                                         <div class="text-start">
                                                             <span class="label"
@@ -237,6 +240,29 @@
                                                             </span>
                                                         </div>
                                                     </button>
+                                                    <div
+                                                        class="dropdown-content"
+                                                        id="dropdown-content"
+                                                    >
+                                                        <ul>
+                                                            <!-- Add dropdown options here -->
+                                                            <li
+                                                                data-value="option1"
+                                                            >
+                                                                Option 1
+                                                            </li>
+                                                            <li
+                                                                data-value="option2"
+                                                            >
+                                                                Option 2
+                                                            </li>
+                                                            <li
+                                                                data-value="option3"
+                                                            >
+                                                                Option 3
+                                                            </li>
+                                                        </ul>
+                                                    </div>
 
                                                     <button
                                                         type="button"
@@ -704,172 +730,400 @@
             <!-- all Packages start -->
             <div class="container featured-container">
                 <h4 class="title text-center">All Packages</h4>
-                <div class="package-grid">
-                    <div class="packages-card row">
-                        <div
-                            class="col-sm-12 col-md-12 col-lg-5 image-card p-0"
-                        >
-                            <img
-                                class=""
-                                src="./assets/image/card/package-img.png"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="col-sm-12 col-md-12 col-lg-7 p-0 d-md-flex align-items-center justify-content-between pb-3 pb-lg-0 px-3 px-md-4"
-                        >
-                            <div class="card-content">
-                                <h5 class="card-title">
-                                    Landscape pool relaxation garden Spain
-                                </h5>
-                                <p
-                                    class="card-text d-flex align-items-center gap-1 py-1"
-                                >
-                                    <i class="fa-solid fa-location-dot"></i
-                                    >Spain
-                                </p>
-                                <p
-                                    class="card-text d-block align-items-center gap-2"
-                                >
-                                    <span style="color: #2b2b2b"
-                                        >Rating (4.8)</span
-                                    >
-                                    <span class="star-icon ms-2"
-                                        ><i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i
-                                    ></span>
-                                </p>
+                <div class="all-packages-contanier mt-5">
+                    <a href="tour-details.html">
+                        <div class="all-packages-card">
+                            <div class="left-packages left-image">
+                                <img
+                                    src="./assets/image/card/packageImg.png"
+                                    alt=""
+                                />
                             </div>
-                            <div>
-                                <div class="d-flex flex-column gap-2">
-                                    <button
-                                        class="card-btn"
-                                        style="font-size: 14px"
+                            <div class="right-packages">
+                                <div class="package-card-left-text">
+                                    <div>
+                                        <h5 class="card-title">
+                                            Stopover opportunity in İstanbul
+                                            with Turkish Airlines
+                                        </h5>
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1"
+                                        >
+                                            <i
+                                                class="fa-solid fa-location-dot"
+                                            ></i
+                                            >Turkish
+                                        </p>
+                                    </div>
+
+                                    <div class="end-text">
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1 mb-2"
+                                        >
+                                            <i
+                                                class="bi bi-clock-fill"
+                                                style="font-size: 12px"
+                                            ></i>
+
+                                            A day
+                                        </p>
+                                        <div
+                                            class="mb-2 d-flex align-items-center gap-2 flex-wrap"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Day-Out Packages
+                                                <i
+                                                    class="fa-solid fa-truck"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Hotel
+                                                <i
+                                                    class="bi bi-buildings-fill"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Breakfast
+                                                <i
+                                                    class="fa-solid fa-mug-saucer"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-card-right-text">
+                                    <p class="start-from text-end mb-1">
+                                        Starting From
+                                    </p>
+                                    <p class="discount text-end mb-1">
+                                        BDT <span>2,000</span>
+                                    </p>
+                                    <p class="text-end price-package mb-1">
+                                        <span style="font-size: 12px">BDT</span>
+                                        <span
+                                            class="fw-bold"
+                                            style="font-size: 20px"
+                                            >1,900</span
+                                        >
+                                    </p>
+                                    <p class="start-from text-end">
+                                        Per Person
+                                    </p>
+                                    <div
+                                        class="mt-2 d-flex justify-content-end"
                                     >
-                                        BDT 699
-                                    </button>
-                                    <a
-                                        href="tour-details.html"
-                                        class="details-btn"
-                                        >Details</a
+                                        <button class="btn btn-sm off-btn">
+                                            5% Off
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a
+                    >
+
+                    <a href="tour-details.html"
+                        ><div class="all-packages-card">
+                            <div class="left-packages left-image">
+                                <img
+                                    src="./assets/image/card/package-img2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="right-packages">
+                                <div class="package-card-left-text">
+                                    <div>
+                                        <h5 class="card-title">
+                                            Stopover opportunity in İstanbul
+                                            with Turkish Airlines
+                                        </h5>
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1"
+                                        >
+                                            <i
+                                                class="fa-solid fa-location-dot"
+                                            ></i
+                                            >Turkish
+                                        </p>
+                                    </div>
+
+                                    <div class="end-text">
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1 mb-2"
+                                        >
+                                            <i
+                                                class="bi bi-clock-fill"
+                                                style="font-size: 12px"
+                                            ></i>
+
+                                            A day
+                                        </p>
+                                        <div
+                                            class="mb-2 d-flex align-items-center gap-2 flex-wrap"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Day-Out Packages
+                                                <i
+                                                    class="fa-solid fa-truck"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Hotel
+                                                <i
+                                                    class="bi bi-buildings-fill"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Breakfast
+                                                <i
+                                                    class="fa-solid fa-mug-saucer"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-card-right-text">
+                                    <p class="start-from text-end mb-1">
+                                        Starting From
+                                    </p>
+                                    <p class="discount text-end mb-1">
+                                        BDT <span>2,000</span>
+                                    </p>
+                                    <p class="text-end price-package mb-1">
+                                        <span style="font-size: 12px">BDT</span>
+                                        <span
+                                            class="fw-bold"
+                                            style="font-size: 20px"
+                                            >1,900</span
+                                        >
+                                    </p>
+                                    <p class="start-from text-end">
+                                        Per Person
+                                    </p>
+                                    <div
+                                        class="mt-2 d-flex justify-content-end"
                                     >
+                                        <button class="btn btn-sm off-btn">
+                                            5% Off
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a
+                    >
+                    <a href="tour-details.html"
+                        ><div class="all-packages-card">
+                            <div class="left-packages left-image">
+                                <img
+                                    src="./assets/image/card/package-img3.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="right-packages">
+                                <div class="package-card-left-text">
+                                    <div>
+                                        <h5 class="card-title">
+                                            Stopover opportunity in İstanbul
+                                            with Turkish Airlines
+                                        </h5>
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1"
+                                        >
+                                            <i
+                                                class="fa-solid fa-location-dot"
+                                            ></i
+                                            >Turkish
+                                        </p>
+                                    </div>
+
+                                    <div class="end-text">
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1 mb-2"
+                                        >
+                                            <i
+                                                class="bi bi-clock-fill"
+                                                style="font-size: 12px"
+                                            ></i>
+
+                                            A day
+                                        </p>
+                                        <div
+                                            class="mb-2 d-flex align-items-center gap-2 flex-wrap"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Day-Out Packages
+                                                <i
+                                                    class="fa-solid fa-truck"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Hotel
+                                                <i
+                                                    class="bi bi-buildings-fill"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Breakfast
+                                                <i
+                                                    class="fa-solid fa-mug-saucer"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-card-right-text">
+                                    <p class="start-from text-end mb-1">
+                                        Starting From
+                                    </p>
+                                    <p class="discount text-end mb-1">
+                                        BDT <span>2,000</span>
+                                    </p>
+                                    <p class="text-end price-package mb-1">
+                                        <span style="font-size: 12px">BDT</span>
+                                        <span
+                                            class="fw-bold"
+                                            style="font-size: 20px"
+                                            >1,900</span
+                                        >
+                                    </p>
+                                    <p class="start-from text-end">
+                                        Per Person
+                                    </p>
+                                    <div
+                                        class="mt-2 d-flex justify-content-end"
+                                    >
+                                        <button class="btn btn-sm off-btn">
+                                            5% Off
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a
+                    >
+                    <a href="tour-details.html">
+                        <div class="all-packages-card">
+                            <div class="left-packages left-image">
+                                <img
+                                    src="./assets/image/card/package-img4.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="right-packages">
+                                <div class="package-card-left-text">
+                                    <div>
+                                        <h5 class="card-title">
+                                            Stopover opportunity in İstanbul
+                                            with Turkish Airlines
+                                        </h5>
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1"
+                                        >
+                                            <i
+                                                class="fa-solid fa-location-dot"
+                                            ></i
+                                            >Turkish
+                                        </p>
+                                    </div>
+
+                                    <div class="end-text">
+                                        <p
+                                            class="card-text d-flex align-items-center gap-1 mb-2"
+                                        >
+                                            <i
+                                                class="bi bi-clock-fill"
+                                                style="font-size: 12px"
+                                            ></i>
+
+                                            A day
+                                        </p>
+                                        <div
+                                            class="mb-2 d-flex align-items-center gap-2 flex-wrap"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Day-Out Packages
+                                                <i
+                                                    class="fa-solid fa-truck"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Hotel
+                                                <i
+                                                    class="bi bi-buildings-fill"
+                                                ></i>
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-sm package-tag"
+                                            >
+                                                Breakfast
+                                                <i
+                                                    class="fa-solid fa-mug-saucer"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-card-right-text">
+                                    <p class="start-from text-end mb-1">
+                                        Starting From
+                                    </p>
+                                    <p class="discount text-end mb-1">
+                                        BDT <span>2,000</span>
+                                    </p>
+                                    <p class="text-end price-package mb-1">
+                                        <span style="font-size: 12px">BDT</span>
+                                        <span
+                                            class="fw-bold"
+                                            style="font-size: 20px"
+                                            >1,900</span
+                                        >
+                                    </p>
+                                    <p class="start-from text-end">
+                                        Per Person
+                                    </p>
+                                    <div
+                                        class="mt-2 d-flex justify-content-end"
+                                    >
+                                        <button class="btn btn-sm off-btn">
+                                            5% Off
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="packages-card row">
-                        <div
-                            class="col-sm-12 col-md-12 col-lg-5 image-card p-0"
-                        >
-                            <img
-                                class=""
-                                src="./assets/image/card/package-img.png"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="col-sm-12 col-md-12 col-lg-7 p-0 d-md-flex align-items-center justify-content-between pb-3 pb-lg-0 px-3 px-md-4"
-                        >
-                            <div class="card-content">
-                                <h5 class="card-title">
-                                    Landscape pool relaxation garden Spain
-                                </h5>
-                                <p
-                                    class="card-text d-flex align-items-center gap-1 py-1"
-                                >
-                                    <i class="fa-solid fa-location-dot"></i
-                                    >Spain
-                                </p>
-                                <p
-                                    class="card-text d-block align-items-center gap-2"
-                                >
-                                    <span style="color: #2b2b2b"
-                                        >Rating (4.8)</span
-                                    >
-                                    <span class="star-icon ms-2"
-                                        ><i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i
-                                    ></span>
-                                </p>
-                            </div>
-                            <div>
-                                <div class="d-flex flex-column gap-2">
-                                    <button
-                                        class="card-btn"
-                                        style="font-size: 14px"
-                                    >
-                                        BDT 699
-                                    </button>
-                                    <a
-                                        href="tour-details.html"
-                                        class="details-btn"
-                                        >Details</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="packages-card row">
-                        <div
-                            class="col-sm-12 col-md-12 col-lg-5 image-card p-0"
-                        >
-                            <img
-                                class=""
-                                src="./assets/image/card/package-img.png"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="col-sm-12 col-md-12 col-lg-7 p-0 d-md-flex align-items-center justify-content-between pb-3 pb-lg-0 px-3 px-md-4"
-                        >
-                            <div class="card-content">
-                                <h5 class="card-title">
-                                    Landscape pool relaxation garden Spain
-                                </h5>
-                                <p
-                                    class="card-text d-flex align-items-center gap-1 py-1"
-                                >
-                                    <i class="fa-solid fa-location-dot"></i
-                                    >Spain
-                                </p>
-                                <p
-                                    class="card-text d-block align-items-center gap-2"
-                                >
-                                    <span style="color: #2b2b2b"
-                                        >Rating (4.8)</span
-                                    >
-                                    <span class="star-icon ms-2"
-                                        ><i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i
-                                    ></span>
-                                </p>
-                            </div>
-                            <div>
-                                <div class="d-flex flex-column gap-2">
-                                    <button
-                                        class="card-btn"
-                                        style="font-size: 14px"
-                                    >
-                                        BDT 699
-                                    </button>
-                                    <a
-                                        href="tour-details.html"
-                                        class="details-btn"
-                                        >Details</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="mt-5 text-center">
                     <a href="all-package.html" class="details-btn">View All</a>
@@ -1093,5 +1347,7 @@
 
         <!-- custom js -->
         <script src="./js/app.js"></script>
+
+        <script src="./js/searchDropDown.js"></script>
     </body>
 </html>
